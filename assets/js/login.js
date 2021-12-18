@@ -54,7 +54,7 @@ $(() => {
         )
     })
 
-    // 监听邓伦表单提交事件
+    // 监听表单提交事件
     $("#form_login").submit((e) => {
         e.preventDefault();
         $.ajax({
@@ -66,13 +66,13 @@ $(() => {
                 if (res.status !== 0) {
                     return layer.msg("登录失败");
                 }
-                // console.log(res.token);
+                console.log(res.token);
 
                 // 将获取到的token值保存到localStorage中
                 localStorage.setItem("token", res.token)
 
                 // 登录成功后跳转到后台主页
-                // location.href = "/index.html";
+                location.href = "/index.html";
             }
         })
     })
