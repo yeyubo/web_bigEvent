@@ -1,4 +1,5 @@
 $(() => {
+     localStorage.removeItem("token");
     // 点击去注册账号的链接
     $("#link_reg").on("click", () => {
         $(".login-box").hide();
@@ -60,20 +61,21 @@ $(() => {
         $.ajax({
             url: "http://api-breakingnews-web.itheima.net/api/login",
             method: "POST",
+
             // 快速获取表单数据
             data: $("#form_login").serialize(),
             success: (res) => {
                 if (res.status !== 0) {
                     return layer.msg("登录失败");
                 }
-                console.log(res.token);
+                // console.log(res.token);
 
                 // 将获取到的token值保存到localStorage中
                 localStorage.setItem("token", res.token)
 
                 // 登录成功后跳转到后台主页
                 location.href = "/index.html";
-            }
+            },
         })
     })
 })

@@ -1,0 +1,64 @@
+.layui-footer {
+    text-align: center;
+    font-size: 15px;
+}
+
+.iconfont {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.layui-icon {
+    margin-right: 8px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.layui-body {
+    /* 隐藏iframe滚动条 */
+    overflow: hidden;
+}
+
+a {
+    /* 清除a链接动画 */
+    transition: none !important;
+}
+
+.userinfo {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    user-select: none;
+
+    /* 文本内容禁止被选中 */
+    margin-right: 30px;
+}
+
+.layui-side-scroll .userinfo {
+    border-bottom: 1px solid #282B33;
+}
+
+.text-avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.layui-nav-img {
+    width: 40px;
+    height: 40px;
+}
