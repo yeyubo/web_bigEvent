@@ -72,7 +72,7 @@ $(() => {
                 localStorage.setItem("token", res.token)
 
                 // 登录成功后跳转到后台主页
-                // location.href = "/index.html";
+                location.href = "/index.html";
             }
         })
     })
