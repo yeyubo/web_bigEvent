@@ -10,7 +10,7 @@ $.ajaxPrefilter((options) => {
             Authorization: localStorage.getItem("token") || "",
         }
     }
-    // 全局同意挂载complete函数
+    // 全局统一挂载complete函数
     // 无论请求成功或者失败，都会执行complete函数
     options.complete = (res) => {
         if (res.responseJSON.status === 1 && res.responseJSON.message === "身份认证失败！") {
