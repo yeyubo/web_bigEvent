@@ -65,11 +65,9 @@ $(() => {
                 }
                 layer.msg("更换头像成功~")
 
-                
                 // 调用父窗口中的getUserInfo()渲染头像
                 window.parent.getUserInfo();
             }
-
         })
     })
 
